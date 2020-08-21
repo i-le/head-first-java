@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+Question 1
+Before you can effectively code in Java, you need to be able to understand what your code does. Try to solve the following problems in this quiz by hand!
+
+Consider the following BlueJ program.
+public class Mystery {
+  
+  /**
+   * read file of mysterious phrases
+   */
+   
+  public void DoSomething() {
+    // initialize instance variables
+    FileResource someFile = FileResource("phrases.txt");
+    for (String phrase : someFile.lines()){
+      System.out.println(phrase);
+    }
+  }
+}
+Which one of the following is the name of a method?
+
+
+
+DoSomething
+
+
+
+
+Correct
+2.
+Question 2
+Consider the following Java class.
+public class Thing {
+  
+  private int a;
+  
+  public Thing(int x) {
+    a = x;
+  }
+  
+  public int geta() {
+    return a;
+  }
+  
+  public void print() {
+    int b = 4;System.out.println(geta() + " " + b);
+  }
+}
+What is (or are) the instance variable(s) in this class?
+
+
+a and x
+
+
+
+This is not the correct answer. Only variables declared outside the methods are instance variables.
+
+3.
+Question 3
+Consider the following Java class.
+
+public class Thing {
+  
+  private int a;
+  
+  public Thing(int x) {
+    a = x;
+  }
+  
+  public int geta() {
+    return a;
+  }
+}
+And consider the following code segment that uses the class Thing.
+
+Thing f = new Thing(3);
+Thing g = new Thing(5);
+Thing h = f;
+Thing j = h;
+How many Thing objects are created?
+
+
+2
+Correct
+A new object is created whenever the new keyword is used.
+
+4.
+Question 4
+Consider the following code segment that uses the edu.duke FileResource class. The method .length() calculates how many characters are inside a string. For example, for the string "puppy", .length() would calculate a value of 5. We will learn more about strings later in this course.
+
+FileResource f = new FileResource("words.txt");
+for (String g : f.lines()) {
+  
+  if (g.length() > 5) {
+    System.out.println(g);
+  }
+}   
+Suppose the file words.txt contains the following lines:
+
+cat
+
+elephant
+
+monkey
+
+tiger
+
+lion
+
+Which one of the following would be the output from this code segment?
+
+Hint: Be sure to review the documentation for FileResource if you do are not sure what this class does or what methods it contains: http://www.dukelearntoprogram.com/course2/doc/.
+
+
+
+elephant
+
+monkey
+
+
+This is the correct answer. Only words of length greater than five are printed.
+
+5.
+Question 5
+Consider the Thing class shown below.
+
+public class Thing {
+  
+  private int a;
+  
+  public Thing(int x) {
+    a = x;
+  }
+  
+  public int geta() {
+    return a ;
+  }
+  
+  public void combine (Thing y) {
+    a = a + y.geta();
+  }
+}
+And consider the following code segment that uses the Thing class.
+
+Thing f = new Thing(6);
+Thing g = new Thing(8);
+f.combine(g);
+System.out.println(f.geta());
+System.out.println(g.geta());
+What is printed when this code is executed?
+
+
+14
+
+8
+
+
+
+</body>
+</html>
