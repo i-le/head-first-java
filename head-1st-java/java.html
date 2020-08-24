@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some basic java concepts</title>
+</head>
+<body>
+    
+FAQ1 Why just 0s and 1s?
+Computers use 0s and 1s because it is easy to make an electrical device
+that has only two stable states. However, when you are programming,
+you normally need not be concerned about the encoding of data as 0s
+and 1s. You can program as if the computer directly stored numbers,
+letters, or strings of characters in memory.
+ There is nothing special about calling the states zero and one. We
+could just as well use any two names, such as A and B or true and false.
+The important thing is that the underlying physical device has two stable
+states, such as on and off or high voltage and low voltage. Calling these
+two states zero and one is simply a convention, but it’s one that is almost
+universally followed.
+
+
+RECAP Bytes and Memory Locations
+A computer’s main memory is divided into numbered units called bytes.
+The number of a byte is called its address. Each byte can hold eight
+binary digits, or bits, each of which is either 0 or 1. To store a piece of
+data that is too large to fit into a single byte, the computer uses several
+adjacent bytes. These adjacent bytes are thought of as a single, larger
+memory location whose address is the address of the first of the adjacent
+bytes.
+
+
+FAQ What exactly is software?
+The word software simply means programs. Thus, a software company
+is a company that produces programs. The software on your computer is
+just the collection of programs on your computer.
+
+RECAP Compiler
+A compiler is a program that translates a program written in a high-level
+language, such as Java, into a program in a simpler language that the
+computer can more or less directly understand.
+
+RECAP Interpreter
+An interpreter is a program that alternates the translation and execution
+of statements in a program written in a high-level language.
+
+RECAP Bytecode
+The Java compiler translates your Java program into a language called
+bytecode. This bytecode is not the machine language for any particular
+computer, but it is similar to the machine language of most common
+computers. Bytecode is easily translated into the machine language of
+a given computer. Each type of computer will have its own translator—
+called an interpreter—that translates from bytecode instructions to
+machine-language instructions for that computer.
+
+
+public class FirstProgram
+{
+ . . .
+}
+
+public class FirstProgram
+{
+    public static void main(String[] args)
+ {
+    System.out.println("Hello out there.");
+    System.out.println("I will add two numbers for you.");
+    System.out.println("Enter two whole numbers on a line:");
+        int n1, n2;
+    Scanner keyboard = new Scanner(System.in);
+    n1 = keyboard.nextInt();
+    n2 = keyboard.nextInt();
+    System.out.print1n("The sum of those two numbers is");
+    System.out.print1n(n1 + n2);
+ }
+}
+
+Sample Screen Output 
+
+Hello out there.
+I will add two numbers for you.
+Enter two whole numbers on a line:
+12 30
+The sum of those two numbers is
+42
+
+</body>
+</html>
