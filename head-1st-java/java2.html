@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Variables
+Variables in a program are used to store data such as numbers and letters.
+They can be thought of as containers of a sort. The number, letter, or other
+data item in a variable is called its value. This value can be changed, so that at
+one time the variable contains, say, 6, and at another time, after the program
+has run for a while, the variable contains a different value, such as 4.
+For example, the program in Listing 2.1 uses the variables numberOfBaskets,
+eggsPerBasket, and totalEggs8IFOUIJTQSPHSBNJTSVOUIFTUBUFNFOU
+eggsPerBasket = 6;
+sets the value of eggsPerBasket to 6.
+
+public class EggBasket
+{
+public static void main(String[] args)
+ {
+int numberOfBaskets, eggsPerBasket, totalEggs;
+ numberOfBaskets = 10;
+ eggsPerBasket = 6;
+ totalEggs = numberOfBaskets * eggsPerBasket;
+ System.out.println("If you have");
+ System.out.println(eggsPerBasket + " eggs per basket and");
+ System.out.println(numberOfBaskets + " baskets, then");
+ System.out.println("the total number of eggs is " + totalEggs);
+ }
+
+
+ the variable is given a value, the value is encoded as a string of 0s and 1s and is
+ placed in the variable’s memory location.
+ You should choose variable names that are helpful. The names should
+ suggest the variables’ use or indicate the kind of data they will hold. For
+ example, if you use a variable to count something, you might name it count.
+ If the variable is used to hold the speed of an automobile, you might call the
+ variable speed. You should almost never use single-letter variable names like
+ x and y. Somebody reading the statement
+ x = y + z;
+ would have no idea of what the program is really adding. The names of
+ variables must also follow certain spelling rules, which we will detail later in
+ the section “Java Identifiers.”
+ Before you can use a variable in your program, you must state some basic
+ information about each one. The compiler—and so ultimately the computer—
+ needs to know the name of the variable, how much computer memory to
+ reserve for the variable, and how the data item in the variable is to be coded as
+ strings of 0s and 1s. You give this information in a variable declaration. Every
+ variable in a Java program must be declared before it is used for the first time.
+ A variable declaration tells the computer what type of data the variable
+ will hold. That is, you declare the variable’s data type. Since different types
+ of data are stored in the computer’s memory in different ways, the computer
+ must know the type of a variable so it knows how to store and retrieve
+ the value of the variable from the computer’s memory. For example, the
+ following line from Listing 2.1 declares numberOfBaskets, eggsPerBasket,
+ and totalEggs to be variables of data type int:
+ int numberOfBaskets, eggsPerBasket, totalEggs;
+ A variable declaration consists of a type name, followed by a list of variable
+ names separated by commas. The declaration ends with a semicolon. All the
+ variables named in the list are declared to have the same data type, as given at
+ the start of the declaration.
+ If the data type is int, the variable can hold whole numbers, such as 42,
+ −99, 0, and 2001. A whole number is called an integer. The word int is an
+ abbreviation of integer. If the type is double, the variable can hold numbers
+ having a decimal point and a fractional part after the decimal point. If the
+ type is char, the variables can hold any one character that appears on the
+ computer keyboard.
+ Every variable in a Java program must be declared before the variable can
+ be used. Normally, a variable is declared either just before it is used or at the
+ start of a section of your program that is enclosed in braces {}. In the simple
+ programs we have seen so far, this means that
+
+ RECAP Variable Declarations
+In a Java program, you must declare a variable before it can be used.
+A variable declaration has the following form:
+SYNTAX
+Type Variable_1, Variable_2, ...;
+EXAMPLES
+int styleNumber, numberOfChecks, numberOfDeposits;
+double amount, interestRate;
+char answer;
+
+
+REMEMBER Syntactic Variables
+When you see something in this book like Type, Variable_1, or Variable_2
+used to describe Java syntax, these words do not literally appear in your
+Java code. They are syntactic variables, which are a kind of blank that you
+fill in with something from the category that they describe. For example,
+Type can be replaced by int, double, char, or any other type name.
+Variable_1 and Variable_2 can each be replaced by any variable name
+
+
+
+</body>
+</html>
