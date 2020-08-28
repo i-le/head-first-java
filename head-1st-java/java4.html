@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    RECAP Multibranch if-else Statement
+SYNTAX
+if (Boolean_Expression_1)
+Action_1
+else if (Boolean_Expression_2)
+Action_2
+.
+.
+.
+else if (Boolean_Expression_n)
+Action_n
+else
+Default_Action
+The actions are Java statements. The boolean expressions are tested
+one after the other, starting from the top one. As soon as a boolean
+expression is found to be true, the action following that true boolean
+expression is executed, and subsequent tests and actions are ignored.
+The Default_Action is executed if none of the boolean expressions
+is true. Figure 3.8 illustrates the semantics of this form of if-else
+statement.
+EXAMPLE
+if (number < 10)
+ System.out.println("number < 10");
+else if (number < 50)
+ System.out.println("number >= 10 and number < 50");
+else if (number < 100)
+ System.out.println("number >= 50 and number < 100");
+else
+ System.out.println("number >= 100.");
+
+
+</body>
+</html>
