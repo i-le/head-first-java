@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    An if-else statement can contain any sort of statements within it. In
+particular, you can nest one if-else statement within another if-else
+statement, as illustrated by the following:
+if (balance >= 0)
+if (INTEREST_RATE >= 0)
+ balance = balance + (INTEREST_RATE * balance) / 12;
+else
+ System.out.println("Cannot have a negative interest.");
+else
+ balance = balance − OVERDRAWN_PENALTY;
+If the value of balance is greater than or equal to zero, the entire following
+if-else statement is executed:
+if (INTEREST_RATE >= 0)
+ balance = balance + (INTEREST_RATE * balance) / 12;
+else
+ System.out.println("Cannot have a negative interest.");
+The nested statements can be made clearer by adding braces, as follows:
+
+
+if (balance >= 0)
+{
+if (INTEREST_RATE >= 0)
+ balance = balance + (INTEREST_RATE * balance)/12;
+else
+ System.out.println("Cannot have a negative interest.");
+}
+else
+ balance = balance − OVERDRAWN_PENALTY;
+In this case, the braces are an aid to clarity but are not, strictly speaking,
+needed.
+In other cases, braces are needed. If we omit an else, for example, things
+get a bit trickier. The following two statements differ in appearance only in
+that one has a pair of braces, but they do not have the same meaning:
+//First Version − Braces
+if (balance >= 0)
+{
+if (INTEREST_RATE >= 0)
+ balance = balance + (INTEREST_RATE * balance)/12;
+}
+else
+ balance = balance − OVERDRAWN_PENALTY;
+//Second Version - No Braces
+if (balance >= 0)
+if (INTEREST_RATE >= 0)
+ balance = balance + (INTEREST_RATE * balance)/12;
+else
+ balance = balance − OVERDRAWN_PENALTY;
+In an if-else statement, each else is paired with the nearest preceding
+unmatched if5IFTFDPOEWFSTJPOXJUIPVUCSBDFTQBJSTUIFelse with the
+second if, despite the misleading indentation. Thus, the meaning is
+//Equivalent to Second Version
+if (balance >= 0)
+{
+if (INTEREST_RATE >= 0)
+ balance = balance + (INTEREST_RATE * balance)/12;
+else
+ balance = balance OVERDRAWN_PENALTY;
+}
+To clarify the difference a bit more, consider what happens when balance
+is greater than or equal to zero. In the first version, the following action occurs:
+if (INTEREST_RATE >= 0)
+balance = balance + (INTEREST_RATE * balance)/12;
+
+If balance is not greater than or equal to zero in the first version, the following
+action is taken instead:
+balance = balance − OVERDRAWN_PENALTY;
+In the second version, if balance is greater than or equal to zero, the following
+entire if-else statement is executed:
+if (INTEREST_RATE >= 0)
+ balance = balance + (INTEREST_RATE * balance)/12;
+else
+ balance = balance − OVERDRAWN_PENALTY;
+If balance is not greater than or equal to zero in the second version, no action
+is taken.
+</body>
+</html>
