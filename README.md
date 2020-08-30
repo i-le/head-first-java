@@ -1,3 +1,5 @@
 # head-first-java
 
-all about java
+Personal java lib
+
+### consists learning java, let's go!
